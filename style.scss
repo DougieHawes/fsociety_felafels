@@ -1,0 +1,112 @@
+$colour1: blue;
+$colour2: white;
+$colour3: yellow;
+$colour4: red;
+
+* {
+  box-sizing: border-box;
+  color: $colour1;
+  font-family: sans-serif;
+  list-style: none;
+  margin: 0;
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  position: relative;
+}
+
+.error {
+  color: $colour4;
+}
+
+.footer {
+  background-color: $colour1;
+  bottom: 0;
+  padding: 12px 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  * {
+    color: $colour2;
+  }
+}
+
+.form {
+  margin: 0 auto;
+  width: 420px;
+  .form-title {
+    text-align: center;
+  }
+  .form-label,
+  .form-input,
+  .form-button {
+    margin: 2px 0;
+    width: 100%;
+  }
+  .form-button {
+    background-color: $colour1;
+    border: none;
+    color: $colour2;
+    cursor: pointer;
+    font-size: 21px;
+    padding: 6px 0;
+  }
+}
+
+.header {
+  background-color: $colour1;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 6%;
+  .title {
+    * {
+      color: $colour2;
+    }
+  }
+  .navbar {
+    .navbar-links {
+      .navbar-link {
+        background-color: $colour3;
+        padding: 3px 12px;
+      }
+    }
+  }
+}
+
+.route {
+  padding: 12px 6%;
+  .route-title {
+    text-align: center;
+  }
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  .table-item {
+    border: 1px solid $colour1;
+    height: 210px;
+    margin: 6px;
+    padding: 6px 2%;
+    position: relative;
+    width: 297px;
+
+    .table-item-title {
+      font-size: 21px;
+    }
+    .table-item-ingredients {
+      font-size: 12px;
+      font-style: italic;
+      padding: 2px 0;
+    }
+    .table-item-link {
+      bottom: 0;
+      padding: 6px 12px;
+      position: absolute;
+      right: 0;
+      text-align: right;
+    }
+  }
+}
