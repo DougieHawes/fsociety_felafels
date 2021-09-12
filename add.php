@@ -28,8 +28,9 @@
       $name = mysqli_real_escape_string($connection, $_POST['name']);
       $email = mysqli_real_escape_string($connection, $_POST['email']);
       $ingredients = mysqli_real_escape_string($connection, $_POST['ingredients']);
+      $id = rand();
 
-      $sql = "INSERT INTO felafels (name, email, ingredients) VALUES ('$name', '$email', '$ingredients')";
+      $sql = "INSERT INTO felafels (name, email, ingredients, id) VALUES ('$name', '$email', '$ingredients', '$id')";
 
       if(mysqli_query($connection, $sql)) {
         header('Location: index.php');
